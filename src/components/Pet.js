@@ -18,8 +18,8 @@ class Pet extends React.Component {
           </div>
         </div>
         <div className="extra content">
-          <button isAdopted && className="ui disabled button">Already adopted</button>
-          <button !isAdopted && className="ui primary button" onClick={this.handleAdoptPet}>Adopt pet</button>
+          {isAdopted && <button  className="ui disabled button">Already adopted</button>}
+          {!isAdopted && <button className="ui primary button" onClick={this.handleAdoptPet}>Adopt pet</button>}
         </div>
       </div>
     )
