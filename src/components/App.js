@@ -20,8 +20,8 @@ class App extends React.Component {
     event.preventDefault()
 
     this.setState({
-      filters: { type: event.target.value }
-    })
+      filters: {...this.state.filters, type: event.target.value }
+    });
   }
 
   onFindPetsClick = (event) => {
