@@ -21,7 +21,7 @@ class App extends React.Component {
 
     this.setState({
       filters: {...this.state.filters, type: event.target.value }
-    });
+    })
   }
 
   onFindPetsClick = (event) => {
