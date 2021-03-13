@@ -18,10 +18,9 @@ class App extends React.Component {
 
   onChangeType = (event) => {
     event.preventDefault()
-    const petType = event.target.value
 
     this.setState({
-      filters: { type: petType }
+      filters: { type: event.target.value }
     })
   }
 
